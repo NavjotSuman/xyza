@@ -3,6 +3,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { socialMedia } from "@/data";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -42,9 +44,9 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          {/* <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Dynamic Web Magic with Next.js
-          </p>
+          </p> */}
 
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
@@ -52,21 +54,35 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="I&apos;m Inderpal Taur."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-[22px]">
+            Crafting seamless digital experiences while managing projects with precision and innovation.
           </p>
 
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title="LET'S GO"
               icon={<FaLocationArrow />}
               position="right"
             />
           </a>
+          <div className="flex items-center md:gap-3 gap-6 sm:order-2 pt-14">
+          {socialMedia.map((info) => (
+            <Link
+              href={info.link}
+              key={info.id}
+              className=""
+            >
+              <img src={info.img} alt="icons" width={33} height={33} className="opacity-40 hover:opacity-100" />
+            </Link>
+          ))}
+            {/* <a href="http://" target="_blank" rel="noopener noreferrer" className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">1</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer" className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">2</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer" className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">3</a> */}
+          </div>
         </div>
       </div>
     </div>

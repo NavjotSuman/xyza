@@ -30,11 +30,13 @@ export const TextGenerateEffect = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          console.log("word : ",word);
+          console.log("idx : ",idx);
           return (
             <motion.span
               key={word + idx}
               // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx > 3 ? "text-purple" : "dark:text-white text-black"
+              className={` ${idx > 0 ? "text-purple" : "dark:text-white text-black"
                 } opacity-0`}
             >
               {word}{" "}
