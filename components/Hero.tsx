@@ -63,8 +63,11 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-[20px]">
-          <TextGenerateEffectPadding words="Full Stack AI Engineer & Project Manager | Crafting seamless digital experiences with precision and innovation." />
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-[18px]">
+          {/* Full Stack AI Engineer */}
+          {/* <TextGenerateEffectPadding words="Full Stack AI Engineer" /> */}
+          {/* <TextGenerateEffectPadding words="Crafting seamless digital experiences with precision and innovation." /> */}
+          <TextGenerateEffectPadding words="Full Stack AI Engineer | Crafting seamless digital experiences with precision and innovation." />
             {/* Crafting seamless digital experiences while managing projects with precision and innovation. */}
           </p>
 
@@ -105,14 +108,14 @@ const Hero = () => {
             <div className="flex gap-3">
               <div className="relative inline-flex md:mt-2 overflow-hidden rounded-full p-[1px] focus:outline-none w-9 h-9 md:w-9 opacity-0 animate-fade-in">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
-                <Link href={'https://www.google.com'} className="flex h-full w-full cursor-pointer items-center justify-center rounded-full
+                <Link href={'https://github.com/inderpaltaur'} className="flex h-full w-full cursor-pointer items-center justify-center rounded-full
              bg-slate-950 text-sm text-white backdrop-blur-3xl undefined font-thin" target="_blank">
                   <FiGithub className="font-thin w-5 h-5" />
                 </Link>
               </div>
               <div className="relative inline-flex md:mt-2 overflow-hidden rounded-full p-[1px] focus:outline-none w-9 h-9 md:w-9 opacity-0 animate-fade-in">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
-                <Link href={'https://www.google.com'} className="flex h-full w-full cursor-pointer items-center justify-center rounded-full
+                <Link href={'https://x.com/inderpal_taur'} className="flex h-full w-full cursor-pointer items-center justify-center rounded-full
              bg-slate-950 text-sm text-white backdrop-blur-3xl undefined font-thin" target="_blank">
                   <FaXTwitter className="font-thin w-5 h-5" />
                 </Link>
@@ -150,14 +153,14 @@ const Hero = () => {
                           <img
                             src={company.img}
                             alt={company.name}
-                            className="md:w-10 w-5"
+                            className="md:w-12 w-6"
                           />
-                          <img
+                          {/* <img
                             src={company.nameImg}
                             alt={company.name}
                             width={company.id === 4 || company.id === 5 ? 100 : 150}
                             className="md:w-24 w-20"
-                          />
+                          /> */}
                         </div>
                       </React.Fragment>
                     ))}

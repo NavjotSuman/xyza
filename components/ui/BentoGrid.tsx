@@ -11,6 +11,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { InfiniteTechStack } from "../InfiniteTechStack";
 
 export const BentoGrid = ({
   className,
@@ -52,8 +53,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Python"];
-  const rightLists = ["VueJS", "NextJS", "GraphQL"];
+  const leftLists = ["HTML","CSS","Javscript","Typescript","Pyhton","SQL","MongoDB"];
+  const rightLists = ["VueJS", "NextJS", "GraphQL","ReactJS","NodeJS","Radius"];
 
   const [copied, setCopied] = useState(false);
 
@@ -131,7 +132,7 @@ export const BentoGridItem = ({
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-center mb-5`}
           >
             {title}
           </div>
@@ -141,32 +142,40 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <InfiniteTechStack
+                items={rightLists}
+                direction="right"
+                speed="slow"
+              />
+              <InfiniteTechStack
+                items={leftLists}
+                direction="left"
+                speed="slow"
+              />
+              {/* <div className="gap-3 md:gap-3 lg:gap-8 inline-block animate-scrollfast">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E] inline-block"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+              <div className="gap-3 md:gap-3 lg:gap-8 inline-block animate-scrollfast">
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E] inline-block"
                   >
                     {item}
                   </span>
                 ))}
-              </div>
+              </div> */}
             </div>
           )}
           {id === 6 && (

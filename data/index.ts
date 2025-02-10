@@ -2,7 +2,7 @@ export const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -30,7 +30,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -73,35 +73,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Iris (AI Salesforce Tool)",
-    des: "Developed Iris, an AI-powered tool integrated with Salesforce, enabling users to retrieve records using natural language commands.  Includes CSV export functionality.",
+    title: "AI-Powered Personal Assistant Chat",
+    des: "Developed an AI-driven personal assistant integrating Salesforce, Google Workspace, and video analysis tools to automate lead generation, email workflows, and real-time meeting transcriptions. Enhanced productivity by 30% through seamless CRM sync, calendar management, and task reminders.",
     img: "/iris.JPG",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://www.github.com/",
+    iconLists: ["/python.svg", "/rag.svg", "/chip-ai-svgrepo-com.svg", "/salesforce.svg", "/openai-w.svg"],
+    link: "mailto:singhinderpal0060@gmail.com?subject=Inquiry%20About%20Your%20Projects",
   },
   {
     id: 2,
     title: "POS Web Application",
     des: "Developed a Point of Sale (POS) web application for retail environments, enabling efficient sales tracking and record management.",
     img: "/pos.JPG",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://www.google.com",
+    iconLists: ["/re.svg", "/python.svg", "/javascript.svg", "/bootstrap.svg", "/electronjs-js.svg"],
+    link: "mailto:singhinderpal0060@gmail.com?subject=Inquiry%20About%20Your%20Projects",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Memory Sharing App",
+    des: "Memory-sharing app that lets you connect with loved ones by sharing video and audio memories.  A premium video service is also available.",
     img: "/pos.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://www.instagram.com",
+    iconLists: ["/react-native.svg", "/ts.svg", "/cloudinary.svg", "/firebase.svg", "/nodejs.svg"],
+    link: "mailto:singhinderpal0060@gmail.com?subject=Inquiry%20About%20Your%20Projects",
   },
   {
     id: 4,
     title: "DuelDog (Online Gaming Platform)",
     des: "Created DuelDog, an online gaming platform designed to provide a fun and engaging experience for players.",
     img: "/dueldog.JPG",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://www.apple.com",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shadcn.png", "/nodejs.svg"],
+    link: "mailto:singhinderpal0060@gmail.com?subject=Inquiry%20About%20Your%20Projects",
   },
 ];
 
@@ -138,32 +138,69 @@ export const testimonials = [
   },
 ];
 
+// export const companies = [
+//   {
+//     id: 1,
+//     name: "cloudinary",
+//     img: "/cloud.svg",
+//     nameImg: "/cloudName.svg",
+//     second:"2s"
+//   },
+//   {
+//     id: 2,
+//     name: "appwrite",
+//     img: "/app.svg",
+//     nameImg: "/appName.svg",
+//     second:"2.1s"
+//   },
+//   {
+//     id: 3,
+//     name: "HOSTINGER",
+//     img: "/host.svg",
+//     nameImg: "/hostName.svg",
+//     second:"2.1s"
+//   },
+//   {
+//     id: 4,
+//     name: "stream",
+//     img: "/s.svg",
+//     nameImg: "/streamName.svg",
+//     second:"2.1s"
+//   },
+//   {
+//     id: 5,
+//     name: "docker.",
+//     img: "/dock.svg",
+//     nameImg: "/dockerName.svg",
+//     second:"2.1s"
+//   },
+// ];
 export const companies = [
   {
     id: 1,
     name: "cloudinary",
-    img: "/cloud.svg",
+    img: "/react-native.svg",
     nameImg: "/cloudName.svg",
     second:"2s"
   },
   {
     id: 2,
     name: "appwrite",
-    img: "/app.svg",
+    img: "/next.svg",
     nameImg: "/appName.svg",
     second:"2.1s"
   },
   {
     id: 3,
     name: "HOSTINGER",
-    img: "/host.svg",
+    img: "/python.svg",
     nameImg: "/hostName.svg",
     second:"2.1s"
   },
   {
     id: 4,
     name: "stream",
-    img: "/s.svg",
+    img: "/ts.svg",
     nameImg: "/streamName.svg",
     second:"2.1s"
   },
@@ -179,31 +216,31 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full Stack AI Engineer",
+    desc: "Designed and implemented end-to-end AI pipelines, handling data ingestion, preprocessing, model training, and deployment.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    title: "Frontend Developer",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Freelancer",
+    desc: "Managed client requirements, UI/UX design, development, and deployment independently.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    title: "Mobile App Dev",
+    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.svg",
   },
 ];
 
@@ -211,12 +248,12 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"#"
+    link:"https://github.com/inderpaltaur"
   },
   {
     id: 2,
-    img: "/twit.svg",
-    link:"#"
+    img: "/x-twitter.svg",
+    link:"https://x.com/inderpal_taur"
   },
   {
     id: 3,

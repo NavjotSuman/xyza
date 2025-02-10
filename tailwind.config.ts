@@ -146,6 +146,15 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        scrollfast: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' }
@@ -163,7 +172,9 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        'fade-in': 'fadeIn 3s ease-in forwards'
+        'fade-in': 'fadeIn 3s ease-in forwards',
+        scrollfast: 'scroll var(--animation-duration, 15s) var(--animation-direction, forwards) linear infinite',
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
       },
     },
   },

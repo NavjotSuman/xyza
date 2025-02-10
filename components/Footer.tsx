@@ -3,10 +3,29 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import Link from "next/link";
+// import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import { InfiniteTechStack } from "./InfiniteTechStack";
 
 const Footer = () => {
+  const items1 = [
+    'JavaScript',
+    'Python',
+    'Java',
+    'C++',
+    'Ruby',
+    'Go',
+    'Rust',
+    'TypeScript',
+    'Swift',
+    'Kotlin',
+  ];
   return (
     <footer className="w-full pt-20 pb-10 overflow-hidden" id="contact">
+      {/* <InfiniteTechStack
+              items={items1}
+              direction="right"
+              speed="fast"
+            /> */}
       {/* background grid */}
       <div className="w-full absolute left-0 min-h-96 h-40">
         <img
@@ -25,7 +44,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:singhinderpal0060@gmail.com?subject=Inquiry%20About%20Iris%20(AI%20Salesforce%20Tool)&body=Hi,%0A%0AI%20came%20across%20the%20'Iris%20(AI%20Salesforce%20Tool)'%20project%20on%20your%20portfolio%20and%20would%20like%20to%20know%20more%20about%20it.%0A%0AThanks,%0A[Your%20Name]"        >
+        <a href="mailto:singhinderpal0060@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
