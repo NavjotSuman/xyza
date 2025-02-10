@@ -2,9 +2,12 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import { testimonials } from "@/data";
 
 const Approach = () => {
   return (
+    <>
     <section className="w-full py-20">
       <h1 className="heading">
         My <span className="text-purple">approach</span>
@@ -62,6 +65,21 @@ const Approach = () => {
         </Card>
       </div>
     </section>
+    <h1 className="heading">
+        Kind words from
+        <span className="text-purple"> satisfied clients</span>
+      </h1>
+    <div
+      // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
+      className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
+    >
+      <InfiniteMovingCards
+        items={testimonials}
+        direction="right"
+        speed="slow"
+      />
+    </div>
+    </>
   );
 };
 

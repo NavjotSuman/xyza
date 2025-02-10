@@ -50,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Building AI-driven solutions for real-world challenges.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -73,17 +73,17 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Iris (AI Salesforce Tool)",
+    des: "Developed Iris, an AI-powered tool integrated with Salesforce, enabling users to retrieve records using natural language commands.  Includes CSV export functionality.",
+    img: "/iris.JPG",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://www.github.com/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "POS Web Application",
+    des: "Developed a Point of Sale (POS) web application for retail environments, enabling efficient sales tracking and record management.",
+    img: "/pos.JPG",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://www.google.com",
   },
@@ -91,15 +91,15 @@ export const projects = [
     id: 3,
     title: "AI Image SaaS - Canva Application",
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    img: "/pos.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://www.instagram.com",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "DuelDog (Online Gaming Platform)",
+    des: "Created DuelDog, an online gaming platform designed to provide a fun and engaging experience for players.",
+    img: "/dueldog.JPG",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://www.apple.com",
   },
@@ -144,30 +144,35 @@ export const companies = [
     name: "cloudinary",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
+    second:"2s"
   },
   {
     id: 2,
     name: "appwrite",
     img: "/app.svg",
     nameImg: "/appName.svg",
+    second:"2.1s"
   },
   {
     id: 3,
     name: "HOSTINGER",
     img: "/host.svg",
     nameImg: "/hostName.svg",
+    second:"2.1s"
   },
   {
     id: 4,
     name: "stream",
     img: "/s.svg",
     nameImg: "/streamName.svg",
+    second:"2.1s"
   },
   {
     id: 5,
     name: "docker.",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
+    second:"2.1s"
   },
 ];
 
@@ -181,7 +186,7 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
+    title: "Mobile App Dev",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
@@ -216,11 +221,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link:"#"
-  },
-  {
-    id: 4,
-    img: "/link.svg",
-    link:"#"
+    link:"https://www.linkedin.com/in/inderpaltaur001/"
   },
 ];

@@ -25,7 +25,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:navjotsumandev@gmail.com">
+        <a href="mailto:singhinderpal0060@gmail.com?subject=Inquiry%20About%20Iris%20(AI%20Salesforce%20Tool)&body=Hi,%0A%0AI%20came%20across%20the%20'Iris%20(AI%20Salesforce%20Tool)'%20project%20on%20your%20portfolio%20and%20would%20like%20to%20know%20more%20about%20it.%0A%0AThanks,%0A[Your%20Name]"        >
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="flex items-center md:gap-3 gap-6 sm:order-2">
           {socialMedia.map((info) => (
             <Link
-              href="#about"
+              href={info.link}
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >

@@ -1,10 +1,15 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaXTwitter } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { socialMedia } from "@/data";
+import { companies, socialMedia } from "@/data";
 import Link from "next/link";
+import React from "react";
+import { TextGenerateEffectPadding } from "./ui/TextGenerateEffectPadding";
+import { FiGithub } from "react-icons/fi";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { IoLogoInstagram } from "react-icons/io5";
 
 const Hero = () => {
   return (
@@ -58,8 +63,9 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-[22px]">
-            Crafting seamless digital experiences while managing projects with precision and innovation.
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-[20px]">
+          <TextGenerateEffectPadding words="Full Stack AI Engineer & Project Manager | Crafting seamless digital experiences with precision and innovation." />
+            {/* Crafting seamless digital experiences while managing projects with precision and innovation. */}
           </p>
 
           <a href="#about">
@@ -69,20 +75,94 @@ const Hero = () => {
               position="right"
             />
           </a>
-          <div className="flex items-center md:gap-3 gap-6 sm:order-2 pt-14">
+          {/* background: black;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    display: grid
+; */}
+    {/* place-items: center; */}
+          {/* <div className="flex items-center md:gap-3 gap-6 sm:order-2 pt-14">
           {socialMedia.map((info) => (
             <Link
               href={info.link}
               key={info.id}
-              className=""
+              className="grid rounded-full overflow-hidden w-10 h-10 bg-[#000332] place-items-center"
             >
               <img src={info.img} alt="icons" width={33} height={33} className="opacity-40 hover:opacity-100" />
             </Link>
-          ))}
+          ))} */}
             {/* <a href="http://" target="_blank" rel="noopener noreferrer" className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">1</a>
             <a href="http://" target="_blank" rel="noopener noreferrer" className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">2</a>
             <a href="http://" target="_blank" rel="noopener noreferrer" className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">3</a> */}
-          </div>
+          {/* </div> */}
+          {/* height: 9rem;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%; */}
+          <div className="flex flex-col max-lg:mt-10 h-[14.2rem] justify-between items-center w-full">
+            <div className="flex gap-3">
+              <div className="relative inline-flex md:mt-2 overflow-hidden rounded-full p-[1px] focus:outline-none w-9 h-9 md:w-9 opacity-0 animate-fade-in">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+                <Link href={'https://www.google.com'} className="flex h-full w-full cursor-pointer items-center justify-center rounded-full
+             bg-slate-950 text-sm text-white backdrop-blur-3xl undefined font-thin" target="_blank">
+                  <FiGithub className="font-thin w-5 h-5" />
+                </Link>
+              </div>
+              <div className="relative inline-flex md:mt-2 overflow-hidden rounded-full p-[1px] focus:outline-none w-9 h-9 md:w-9 opacity-0 animate-fade-in">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+                <Link href={'https://www.google.com'} className="flex h-full w-full cursor-pointer items-center justify-center rounded-full
+             bg-slate-950 text-sm text-white backdrop-blur-3xl undefined font-thin" target="_blank">
+                  <FaXTwitter className="font-thin w-5 h-5" />
+                </Link>
+              </div>
+              <div className="relative inline-flex md:mt-2 overflow-hidden rounded-full p-[1px] focus:outline-none w-9 h-9 md:w-9 opacity-0 animate-fade-in">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+                <Link href={'https://www.linkedin.com/in/inderpaltaur001/'} className="flex h-full w-full cursor-pointer items-center justify-center rounded-full
+             bg-slate-950 text-sm text-white backdrop-blur-3xl undefined font-thin" target="_blank">
+                  <TiSocialLinkedin className="font-thin w-6 h-6" />
+                </Link>
+              </div>
+              <div className="relative inline-flex md:mt-2 overflow-hidden rounded-full p-[1px] focus:outline-none w-9 h-9 md:w-9 opacity-0 animate-fade-in">
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
+                <Link href={'https://www.instagram.com/inderpal_taur/'} className="flex h-full w-full cursor-pointer items-center justify-center rounded-full
+             bg-slate-950 text-sm text-white backdrop-blur-3xl undefined font-thin" target="_blank">
+                  <IoLogoInstagram className="font-thin w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+                  {/* <div
+                    // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
+                    className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
+                  >
+                    <InfiniteMovingCards
+                      items={testimonials}
+                      direction="right"
+                      speed="slow"
+                    />
+                  </div> */}
+          
+                  <div className="flex flex-wrap items-center justify-center gap-2 md:gap-8 max-lg:mt-10">
+                    {companies.map((company) => (
+                      <React.Fragment key={company.id}>
+                        <div className={`flex md:max-w-60 opacity-0 animate-[fadeIn_3s_ease-in_forwards] max-w-32 gap-2`}>
+                          <img
+                            src={company.img}
+                            alt={company.name}
+                            className="md:w-10 w-5"
+                          />
+                          <img
+                            src={company.nameImg}
+                            alt={company.name}
+                            width={company.id === 4 || company.id === 5 ? 100 : 150}
+                            className="md:w-24 w-20"
+                          />
+                        </div>
+                      </React.Fragment>
+                    ))}
+                  </div>
+                </div>
         </div>
       </div>
     </div>

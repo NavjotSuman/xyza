@@ -34,7 +34,7 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute top-0 w-full overflow-hidden lg:rounded-3xl"
                 />
               </div>
 
@@ -69,7 +69,7 @@ const RecentProjects = () => {
 
                 <div className="flex justify-center items-center">
                   <Link href={item.link} data-abc={item.link} target="_blank" className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    Contact Me
                   </Link>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
