@@ -63,13 +63,13 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-[18px]">
+          <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-[18px]">
           {/* Full Stack AI Engineer */}
           {/* <TextGenerateEffectPadding words="Full Stack AI Engineer" /> */}
           {/* <TextGenerateEffectPadding words="Crafting seamless digital experiences with precision and innovation." /> */}
           <TextGenerateEffectPadding words="Full Stack AI Engineer | Crafting seamless digital experiences with precision and innovation." />
             {/* Crafting seamless digital experiences while managing projects with precision and innovation. */}
-          </p>
+          </div>
 
           <a href="#about">
             <MagicButton

@@ -1,19 +1,19 @@
+"use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
-// Also install this npm i --save-dev @types/react-lottie
+import dynamic from "next/dynamic";
 import Lottie from "react-lottie";
-
 import { cn } from "@/lib/utils";
-
-
-import { BackgroundGradientAnimation } from "./GradientBg";
+const BackgroundGradientAnimation = dynamic(
+  () => import('./GradientBg'),
+  { ssr: false }
+)
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 import { InfiniteTechStack } from "../InfiniteTechStack";
 
-export const BentoGrid = ({
+const BentoGrid = ({
   className,
   children,
 }: {
@@ -23,7 +23,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
+        // change -4gap to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
@@ -38,7 +38,6 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  //   remove unecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -206,3 +205,6 @@ export const BentoGridItem = ({
     </div>
   );
 };
+
+
+export default BentoGrid
