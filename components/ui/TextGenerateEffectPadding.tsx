@@ -13,7 +13,6 @@ export const TextGenerateEffectPadding = ({
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
-    console.log(wordsArray);
     animate(
       "span",
       {
@@ -30,8 +29,6 @@ export const TextGenerateEffectPadding = ({
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
-          console.log("word : ",word);
-          console.log("idx : ",idx);
           return (
             <motion.span
               key={word + idx}

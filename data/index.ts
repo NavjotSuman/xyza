@@ -179,14 +179,14 @@ export const companies = [
   {
     id: 1,
     name: "cloudinary",
-    img: "/react-native.svg",
+    img: "/next.svg",
     nameImg: "/cloudName.svg",
     second:"2s"
   },
   {
     id: 2,
     name: "appwrite",
-    img: "/next.svg",
+    img: "/react-native.svg",
     nameImg: "/appName.svg",
     second:"2.1s"
   },

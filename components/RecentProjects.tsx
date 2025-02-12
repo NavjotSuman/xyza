@@ -7,7 +7,6 @@ import { PinContainer } from "./ui/Pin";
 import Link from "next/link";
 
 const RecentProjects = () => {
-  console.log("called REcent Project....");
   return (
     <div className="py-20" id="projects">
       <h1 className="heading">

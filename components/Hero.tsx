@@ -13,7 +13,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-0 pt-36 md:pb-20 md:pt-36">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -63,7 +63,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-[18px]">
+          <div className="text-center md:tracking-wider mb-4 text-[13px] md:text-lg lg:text-[18px]">
           {/* Full Stack AI Engineer */}
           {/* <TextGenerateEffectPadding words="Full Stack AI Engineer" /> */}
           {/* <TextGenerateEffectPadding words="Crafting seamless digital experiences with precision and innovation." /> */}
@@ -104,7 +104,7 @@ const Hero = () => {
     justify-content: flex-end;
     align-items: center;
     width: 100%; */}
-          <div className="flex flex-col max-lg:mt-10 h-[14.2rem] justify-between items-center w-full">
+          <div className="flex flex-col mt-[0.5rem] h-[10.2rem] lg:h-[14.2rem] justify-between items-center w-full">
             <div className="flex gap-3">
               <div className="relative inline-flex md:mt-2 overflow-hidden rounded-full p-[1px] focus:outline-none w-9 h-9 md:w-9 opacity-0 animate-fade-in">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"></span>
@@ -153,7 +153,7 @@ const Hero = () => {
                           <img
                             src={company.img}
                             alt={company.name}
-                            className="md:w-12 w-6"
+                            className="md:w-12 w-7"
                           />
                           {/* <img
                             src={company.nameImg}
