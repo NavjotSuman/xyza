@@ -23,9 +23,9 @@ const RecentProjects = () => {
               title="/ui.inderpaltaur"
               href="https://github.com/inderpaltaur"
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-fit mb-10">
                 <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                  className="relative w-full h-full overflow-hidden rounded-2xl lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
                   <img src="/bg.png" alt="bgimg" />
@@ -33,7 +33,7 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute top-0 w-full overflow-hidden lg:rounded-3xl"
+                  className="z-10 absolute top-0 w-full overflow-hidden rounded-2xl lg:rounded-3xl"
                 />
               </div>
 
