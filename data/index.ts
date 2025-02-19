@@ -76,7 +76,7 @@ export const projects = [
     title: "AI-Powered Personal Assistant Chat",
     des: "Developed an AI-driven personal assistant integrating Salesforce, Google Workspace, and video analysis tools to automate lead generation, email workflows, and real-time meeting transcriptions. Enhanced productivity by 30% through seamless CRM sync, calendar management, and task reminders.",
     img: "/iris.JPG",
-    iconLists: ["/python.svg", "/rag.svg", "/chip-ai-svgrepo-com.svg", "/salesforce.svg", "/openai-w.svg"],
+    iconLists: ["/python.svg", "/re.svg", "/ai-tech.png", "/salesforce.svg", "/openai-w.svg"],
     link: "mailto:singhinderpal0060@gmail.com?subject=Inquiry%20About%20Your%20Projects",
   },
   {
@@ -200,14 +200,14 @@ export const companies = [
   {
     id: 4,
     name: "stream",
-    img: "/ts.svg",
+    img: "/ai-tech.png",
     nameImg: "/streamName.svg",
     second:"2.1s"
   },
   {
     id: 5,
     name: "docker.",
-    img: "/dock.svg",
+    img: "/ts.svg",
     nameImg: "/dockerName.svg",
     second:"2.1s"
   },
