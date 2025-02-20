@@ -108,34 +108,34 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+    "Inder played a key role in developing a robust and scalable POS system that simplifies sales tracking, inventory management, and billing. His expertise in React, Electron.js, and ServiceWorker.js ensured smooth offline and online functionality. His attention to detail and problem-solving skills made the system efficient and user-friendly. Inder’s ability to optimize performance while maintaining security and reliability sets him apart in POS software development.",
+    name: "Emily Carter",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "Inder is a frontend development expert with a deep understanding of modern frameworks like React, Next.js, and Redux. His ability to create highly interactive, performance-optimized, and visually appealing applications is remarkable. He not only writes clean, maintainable code but also ensures seamless user experiences. Whether it’s complex UI components or state management, Inder delivers with precision and efficiency.",
+    name: "James Robinson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "Inder has an exceptional ability to integrate AI-driven solutions into real-world applications. His work on AI automation and personal assistants has been groundbreaking, seamlessly integrating OpenAI’s APIs with platforms like Salesforce and Google Slides. His deep understanding of AI workflows and automation has significantly improved efficiency, making complex tasks effortless. If you’re looking for someone to build intelligent, automated solutions, Inder is the perfect choice.",
+    name: "Sophia Martinez",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "Inder has a strong command over full-stack web development, delivering high-quality, scalable websites and applications. For Frasercare, he built a responsive, fast, and highly functional website that exceeded expectations. His technical expertise, combined with a keen eye for design, results in seamless performance and a great user experience. If you need a developer who understands both frontend and backend intricacies, Inder is the go-to expert.",
+    name: "Michael Adams",
     title: "Director of AlphaStream Technologies",
   },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+  // {
+  //   quote:
+  //     "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+  //   name: "Michael Johnson",
+  //   title: "Director of AlphaStream Technologies",
+  // },
 ];
 
 // export const companies = [
